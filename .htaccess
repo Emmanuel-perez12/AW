@@ -6,11 +6,19 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+<<<<<<< HEAD
 RewriteBase /academia/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /academia/index.php [L]
+=======
+RewriteBase /tarea2_AW/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /tarea2_AW/index.php [L]
+>>>>>>> bc938e0 (Subiendo proyecto WordPress)
 </IfModule>
 
 # END WordPress
